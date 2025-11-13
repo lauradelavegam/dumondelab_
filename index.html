@@ -1612,25 +1612,25 @@
     <script type="module">
         // ========================================
         // FIREBASE CONFIGURATION
-        // ========================================
-        // TODO: RELLENAR CON TUS DATOS DE FIREBASE
-        
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-        import { getFirestore, collection, getDocs, addDoc, updateDoc, deleteDoc, doc, query, where } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
-        import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+// ========================================
 
-        const firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_AUTH_DOMAIN",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_STORAGE_BUCKET",
-            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-            appId: "YOUR_APP_ID"
-        };
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+import { getFirestore, collection, getDocs, addDoc, updateDoc, deleteDoc, doc, query, where } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
 
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-        const auth = getAuth(app);
+const firebaseConfig = {
+  apiKey: "AIzaSyD1gK2giSzoAVdGEB9DXbQnWrIb5XF7FCE",
+  authDomain: "dumondelab.firebaseapp.com",
+  projectId: "dumondelab",
+  storageBucket: "dumondelab.firebasestorage.app",
+  messagingSenderId: "932971298944",
+  appId: "1:932971298944:web:22da8984aff797de21a665"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
 
         // ========================================
         // TRANSLATIONS
